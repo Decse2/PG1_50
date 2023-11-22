@@ -1,2 +1,2 @@
-bekezdés jelől i guess
+bekezdés jelől i guess k
 https://getbootstrap.com/docs/5.0/components/scrollspy/#scrollspyHeading4
