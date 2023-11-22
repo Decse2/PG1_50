@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-bekezdés jelől i guess k
-https://getbootstrap.com/docs/5.0/components/scrollspy/#scrollspyHeading4
-=======
-bekezdés jelől i guess
-https://getbootstrap.com/docs/5.0/components/scrollspy/#scrollspyHeading4
-dAFDÉLSJÁGIHIGQAŐÖ
->>>>>>> main
