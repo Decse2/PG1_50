@@ -14,7 +14,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background: #311d1f;
+    background: #fcf5a8;
     height: auto;
     width: 100vw;
 
@@ -42,7 +42,7 @@ footer{
     color: #cacdd2;
 }
 .footer-bottom{
-    background: #311d1f;
+    background: #fcf5a8;
     width: 100vw;
     padding: 20px;
 padding-bottom: 40px;
@@ -81,4 +81,8 @@ display: block;
 }
 .footer-menu ul li{
   color: #27bcda;
+}
+
+.footlink:hover :visited :link :active{
+  color: #fcf5a8;
 }
