@@ -1,22 +1,32 @@
 body{
     color:#fcf5a8 ;
-    background-color:#311d1f
+    background-color:#311d1f;
+    max-width: 7680px;    
 }
 a:visited, a{
     color: #311d1f;
 }
 
+.behuz{
+  margin-top: 20px;
+  margin-left: 21.24356748%;
+  margin-right: 21.24356748%;
+  text-align: center;
+  height: 80%;
+}
+
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
     background: #fcf5a8;
     height: auto;
     width: 100vw;
-
+    margin-top: 50px;
     padding-top: 40px;
     color: #fff;
+    
 }
 .footer-content{
     display: flex;
