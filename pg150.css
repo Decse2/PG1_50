@@ -1,0 +1,25 @@
+.behuz{
+    margin-top: 20px;
+    margin-left: 21.24356748%;
+    margin-right: 21.24356748%;
+    text-align: left;
+    height: 80%;
+  }
+  .placeholder {
+    width: 200px;
+    height: 120px;
+    background-color: red;
+    margin: 5px; /* Margó a kockák között */
+    
+}
+#videok{
+  
+}
+/* Táblázat stílusok */
+table {
+    width: 1140px;
+    border-collapse: collapse;
+}
+
+
+  
