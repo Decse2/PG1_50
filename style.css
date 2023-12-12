@@ -1,10 +1,41 @@
 body{
-    color:#fcf5a8 ;
-    background-color:#311d1f;
+    color:rgb(31, 50, 62) ;
+    background-color:rgb(255, 255, 255);
     max-width: 7680px;    
 }
 a:visited, a{
-    color: #311d1f;
+    color: #fff;
+}
+
+.slideshow-container {
+  max-width: 1140px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
+
+}
+
+
+.mySlides {
+  display: none;
+}
+
+.slideimg {
+  width: 100%;
+  max-height: 520px;
+}
+
+/* Add fade animation */
+.fade {
+  animation: fade 2s ease-in-out infinite; }
+
+@keyframes fade {
+  0%, 100% {
+      opacity: 0;
+  }
+  20%, 80% {
+      opacity: 1;
+  }
 }
 
 footer{
@@ -12,10 +43,9 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background: #fcf5a8;
-    height: auto;
+    background: rgb(51,135,187);
     width: 100vw;
-    margin-top: 50px;
+    margin-top: 100px;
     padding-top: 40px;
     color: #fff;
     
@@ -41,7 +71,7 @@ footer{
     color: #cacdd2;
 }
 .footer-bottom{
-    background: #fcf5a8;
+    background: rgb(51,135,187);
     width: 100vw;
     padding: 20px;
 padding-bottom: 40px;
