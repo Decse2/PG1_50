@@ -10,6 +10,7 @@ a:visited, a{
   max-width: 1140px;
   position: relative;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 
@@ -24,8 +25,7 @@ a:visited, a{
 
 /* Add fade animation */
 .fade {
-  animation: fade 2s ease-in-out infinite; /* 2s is the time for each slide, you can adjust it */
-}
+  animation: fade 2s ease-in-out infinite; }
 
 @keyframes fade {
   0%, 100% {

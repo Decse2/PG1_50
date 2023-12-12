@@ -1,333 +1,322 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pg150.css">    
-    <link rel="stylesheet" href="/bootstrap.css">
-    <link rel="stylesheet" href="tanKep.css"> 
-    <script src="/bootstrap.js"></script>
-    <script src="/slide.js"></script>
-    <script src="/tablonezo.js"></script>
+  <!DOCTYPE html>
+  <html lang="hu">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/pg150.css">    
+      <link rel="stylesheet" href="/bootstrap.css">
+      <link rel="stylesheet" href="tanKep.css"> 
+      <script src="/bootstrap.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <link href="/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+      <script src="/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+      <link  href="/fotorama.css" rel="stylesheet">
+      <script src="/fotorama.js"></script>
 
-</head>
+  </head>
+  <body>
+      <!-- Főmenü -->
+      <nav style="color:#311d1f;  background-color:#fcf5a8; width: 101%;" class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/Bevezeto/Bevez.html"><img src="/PG150 projekt/logo150.png" alt="PG150 Logó" title="Vissza a főmenübe" height="75.5px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link" href="/Index.html" style=" font-weight: 700; font-size: 16px;">Főmenü</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Tankep/tanKep.html" role="button" aria-expanded="false" style=" font-weight: 700; font-size: 16px;">Tanítóképző</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/Tankep/tanKep.html#emlekeink">Emlékeink</a></li>
+                    <li><a class="dropdown-item" href="/Tankep/tanKep.html#osztalyok">Osztályok</a></li>
+                    <li><a class="dropdown-item" href="/Tankep/tanKep.html#tablok">Tablók</a></li>
+                    <li><a class="dropdown-item" href="/Tankep/tanKep.html#videok">Videók</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Testgim/Testgim.html" role="button" aria-expanded="false" style=" font-weight: 700; font-size: 16px;">Testnevelési Gimnázium</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/Testgim/Testgim.html#Emlekeink">Emlékeink</a></li>
+                    <li><a class="dropdown-item" href="/Testgim/Testgim.html#Osztalyok">Osztályok</a></li>
+                    <li><a class="dropdown-item" href="/Testgim/Testgim.html#Tablok">Tablók</a></li>
+                    <li><a class="dropdown-item" href="/Testgim/Testgim.html#Videok">Videók</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Petgim/Petgim.html" role="button" aria-expanded="false" style=" font-weight: 700; font-size: 16px;">Petőfi Gimnázium</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/Petgim/Petgim.html#Emlekeink">Emlékeink</a></li>
+                    <li><a class="dropdown-item" href="/Petgim/Petgim.html#Osztalyok">Osztályok</a></li>
+                    <li><a class="dropdown-item" href="/Petgim/Petgim.html#Tablok">Tablók</a></li>
+                    <li><a class="dropdown-item" href="/Petgim/Petgim.html#Videok">Videók</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Gépsza/Gepsza.html" role="button" aria-expanded="false" style=" font-weight: 700; font-size: 16px;">Gépészeti Szakközépiskola</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/Gépsza/Gepsza.html#Emlekeink">Emlékeink</a></li>
+                    <li><a class="dropdown-item" href="/Gépsza/Gepsza.html#Osztalyok">Osztályok</a></li>
+                    <li><a class="dropdown-item" href="/Gépsza/Gepsza.html#Tablok">Tablók</a></li>
+                    <li><a class="dropdown-item" href="/Gépsza/Gepsza.html#Videok">Videók</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Szbi/Szbi.html" role="button" aria-expanded="false" style=" font-weight: 700; font-size: 16px;">Szent Benedek Technikum</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/Szbi/Szbi.html#Emlekeink">Emlékeink</a></li>
+                    <li><a class="dropdown-item" href="/Szbi/Szbi.html#Osztalyok">Osztályok</a></li>
+                    <li><a class="dropdown-item" href="/Szbi/Szbi.html#Tablok">Tablók</a></li>
+                    <li><a class="dropdown-item" href="/Szbi/Szbi.html#Videok">Videók</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Mozaik/Mozaik.html" role="button" aria-expanded="false" style=" font-weight: 700; font-size: 16px;">Mozaik</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/Mozaik/Mozaik.html#Kollegium">Kollégium</a></li>
+                    <li><a class="dropdown-item" href="/Mozaik/Mozaik.html#rendezvenyek">Rendezvenyek</a></li>
+                    <li><a class="dropdown-item" href="/Mozaik/Mozaik.html#testveriskolak">Testvér iskolák</a></li>
+                    <li><a class="dropdown-item" href="/Mozaik/Mozaik.html#Videok">Videók</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+      <div class="bsb1">
+        <!--slider-->
+        <div class="slideshow-container">
+          <!-- Slides -->
+          <div class="mySlides fade">
+              <img class="slideimg" src="/kepek/0001.jpg "alt="Kép 1">
+          </div>
 
-<body>
-    <!-- Főmenü -->
-    <nav style="color:#311d1f;  background-color:#fcf5a8;" class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/Bevezeto/Bevez.html"><img src="/PG150 projekt/logo150.png" alt="PG150 Logó" title="Vissza a főmenübe" height="75.5px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link" href="/Index.html" style=" font-weight: 700; font-size: 16px;">Főmenü</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Tankep/tanKep.html" role="button" aria-expanded="false" style=" font-weight: 700; font-size: 16px;">Tanítóképző</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/Tankep/tanKep.html#emlekeink">Emlékeink</a></li>
-                  <li><a class="dropdown-item" href="/Tankep/tanKep.html#osztalyok">Osztályok</a></li>
-                  <li><a class="dropdown-item" href="/Tankep/tanKep.html#tablok">Tablók</a></li>
-                  <li><a class="dropdown-item" href="/Tankep/tanKep.html#videok">Videók</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Testgim/Testgim.html" role="button" aria-expanded="false" style=" font-weight: 700; font-size: 16px;">Testnevelési Gimnázium</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/Testgim/Testgim.html#Emlekeink">Emlékeink</a></li>
-                  <li><a class="dropdown-item" href="/Testgim/Testgim.html#Osztalyok">Osztályok</a></li>
-                  <li><a class="dropdown-item" href="/Testgim/Testgim.html#Tablok">Tablók</a></li>
-                  <li><a class="dropdown-item" href="/Testgim/Testgim.html#Videok">Videók</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Petgim/Petgim.html" role="button" aria-expanded="false" style=" font-weight: 700; font-size: 16px;">Petőfi Gimnázium</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/Petgim/Petgim.html#Emlekeink">Emlékeink</a></li>
-                  <li><a class="dropdown-item" href="/Petgim/Petgim.html#Osztalyok">Osztályok</a></li>
-                  <li><a class="dropdown-item" href="/Petgim/Petgim.html#Tablok">Tablók</a></li>
-                  <li><a class="dropdown-item" href="/Petgim/Petgim.html#Videok">Videók</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Gépsza/Gepsza.html" role="button" aria-expanded="false" style=" font-weight: 700; font-size: 16px;">Gépészeti Szakközépiskola</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/Gépsza/Gepsza.html#Emlekeink">Emlékeink</a></li>
-                  <li><a class="dropdown-item" href="/Gépsza/Gepsza.html#Osztalyok">Osztályok</a></li>
-                  <li><a class="dropdown-item" href="/Gépsza/Gepsza.html#Tablok">Tablók</a></li>
-                  <li><a class="dropdown-item" href="/Gépsza/Gepsza.html#Videok">Videók</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Szbi/Szbi.html" role="button" aria-expanded="false" style=" font-weight: 700; font-size: 16px;">Szent Benedek Technikum</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/Szbi/Szbi.html#Emlekeink">Emlékeink</a></li>
-                  <li><a class="dropdown-item" href="/Szbi/Szbi.html#Osztalyok">Osztályok</a></li>
-                  <li><a class="dropdown-item" href="/Szbi/Szbi.html#Tablok">Tablók</a></li>
-                  <li><a class="dropdown-item" href="/Szbi/Szbi.html#Videok">Videók</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Mozaik/Mozaik.html" role="button" aria-expanded="false" style=" font-weight: 700; font-size: 16px;">Mozaik</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/Mozaik/Mozaik.html#Kollegium">Kollégium</a></li>
-                  <li><a class="dropdown-item" href="/Mozaik/Mozaik.html#rendezvenyek">Rendezvenyek</a></li>
-                  <li><a class="dropdown-item" href="/Mozaik/Mozaik.html#testveriskolak">Testvér iskolák</a></li>
-                  <li><a class="dropdown-item" href="/Mozaik/Mozaik.html#Videok">Videók</a></li>
-                </ul>
-              </li>
-            </ul>
+          <div class="mySlides fade">
+              <img class="slideimg" src="/kepek/0002.jpg" alt="Kép 2">
+          </div>
+
+          <div class="mySlides fade">
+              <img class="slideimg" src="/kepek/0003.jpg" alt="Kép 3">
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slideimg" src="/kepek/0004.jpg" alt="">
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slideimg" src="/kepek/0005.jpg" alt="Kép 3">
+        </div>
+      </div>
+      <script>
+          // JavaScript for Automatic Slideshow
+          var slideIndex = 0;
+          showSlides();
+
+          function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) { slideIndex = 1 }
+              slides[slideIndex - 1].style.display = "block";
+              setTimeout(showSlides, 2000); // Change slide every 2 seconds, you can adjust it
+          }
+      </script>
+        <!--Conetnt-->
+
+        <h1 style="text-align: center;">„A régi idők eseményei történetté váltak.</h1>
+        <div style="margin-top: 40px;" class="behuz" id="#emlekeink">
+          
+          <p>      Nemcsak története van azonban az intézetnek, hanem élete is, mely emberi sorsokból és elrendelésekből színes mozaik-képpé tevődik össze.
+            A múltnak színes élményszerűen gazdag életét milyen halavány, fakó színben rekonstruálja az irattár avatag lapjairól előkerülő tényszerű adatok.
+            A história fátyolt vet az elzúgott évek apró eseményeire, a diákélet pompázó kedélyvilágára…. Az emlékezés a diák-romantika délibábos képében tükrözteti a régi gondokat és a régi örömöket. Az elcsendült kacagások, teli torkú prepanóták, az ifjú lélekben borongó szekundás szorongások, huncut kötődések, diák-álmok, diák-ábrándok, a szív első rezdülései vajjon hova tűntek, vajon hol maradtak
+            meg?</p>
+          <p>Pedáns rendben sorakoznak a statisztikus előtt a nevek, az adatok, de hol dobog a szív, melynek érzelmei, hangulatai, vágyai szépítették meg a diákéletet?
+            Óh ezek nem maradtak meg az intézet irattárában: ott élnek az emberekben, kiket idefűz az Emlék, vagy belehaltak, elporladtak a földbe, mely sírjával takar.
+            Mennyi sok név, mennyi sok adat, ami belefut egy száraz számjegybe s a lélek húrjain is csak egy számjegyet pendít meg.</p>
+          <p>Ha meg lehetne szólaltatni ezeket az adatokat?”</p>
+          <p>Takács Béla tanár úr e bevezető gondolatokkal kezdte az 1928/29-es esztendő értesítőjét, az iskola 58. tanévében, az intézet új épületében töltött 25 éves jubileum jegyében.</p>
+          <p>A régi idők eseményeit évszámokra, nevekre, adatok sokaságára fűzzük fel ma is, melyek mögött ott van a világ- és országtörténelem sorsfordító eseményeitől az egyéni életutak összekapcsolódásáig minden.
+            Volt egyszer egy tanítóképző…, mely 86 tanévet élt meg, 2 város adott otthont számára, és 3 épületben végezte áldásos nevelői munkáját. Ez idő alatt 13 igazgató szolgálta és irányította az intézmény mindennapi működést; 96 tanár, 20 gazdasági tanár, 18 gyakorlóiskolai tanító, 18 nevelő és 54 hitoktató nevelte és tanította a jövő tanítóit. Az oktató-nevelő munkát segítették az intézeti orvosok, iskolaszolgák, kertészek, gazdasszonyok. 86 esztendő alatt a tanítóképző intézet az oktatási reformoknak köszönhetően 12 fő képzési formaváltást hajtott végre. A 86 esztendő alatt 2154 tanítói oklevelet, valamint 24 gazdasági szaktanítói, 96 testnevelési szaktanítói oklevelet és 374 érettségi bizonyítványt adott át a sikeresen végzett növendékeknek.</p>
+          <p>86 esztendő alatt majd négy generáció nőtt fel, és a 86 esztendő alatt a világtörténelem kereke is nagyot fordult. Volt „boldog békeidő”, de árvíz és sok-sok járvány is, volt két világháború, őszirózsás forradalom, tanácsköztársaság, román megszállás, német megszállás után szovjet megszállás, majd népi demokrácia és 1956.</p>
+          <p>Évszámok és statisztikai adatok sokasága, mely mögött ott van egy nagy múltú iskola
+            mindennapi világa, a tanítói küldetésre való felkészítés, a gyakorlati életre és a helytállásra nevelés, a komoly oktató és nevelő munka melletti vidám és sokoldalú diákélet.</p>
+          <p>Takács Béla tanár úr is arra törekedett több mint 90 évvel ezelőtt, hogy megszólaltassa a számok és adatok sokaságát, mint ahogy mi is erre törekszünk 2021-ben, nem feledve a 150 évvel ezelőtt alapított tanítóképző jelentőségét mind a tanárok, mind a diákok, mind a városunk, Kiskunfélegyháza életében.</p>
+          
+          
+
+          <div id="osztalyok">
+            <h3>Osztályok:</h3>
+            <p>-</p>
+            <p>-</p>
+            <p>-</p>
+            <p>-</p>
+            <p>-</p>
+
+          </div>
+          <div id="tablok">
+            <h3>Tablók:</h3>
+            <div id="fotorama" class="fotorama">
+              <img src="/kepek/0001.jpg" alt="Kép 1">
+              <img src="/kepek/0002.jpg" alt="Kép 2">
+              <img src="/kepek/0003.jpg" alt="Kép 3">
+              <img src="/kepek/0004.jpg" alt="Kép 4">
+              <img src="/kepek/0005.jpg" alt="Kép 5">
+            </div>
+          </div>
+          <script>
+            $(document).ready(function () {
+              $('#fotorama').fotorama({
+                width: '100%', // Változtathatod a szélességet
+                maxwidth: '100%', // A képek maximális szélessége
+                ratio: 16 / 9, // A képarány (itt 16:9)
+                allowfullscreen: true, // Teljes képernyős nézet engedélyezése
+                nav: 'thumbs', // Kisképek mutatása a navigációhoz
+                loop: true // Végtelenített görgetés
+              });
+            });
+          </script>
+          
+        
+          <div id="videok">
+            <h3>Videók:</h3>
+          </div class="flex-container">
+              <iframe width="215" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+              <iframe width="215" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+              <iframe width="215" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+              <iframe width="215" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+              <iframe width="215" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+              <iframe width="215" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+              <iframe width="215" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+              <iframe width="215" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+              <iframe width="215" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+              <iframe width="215" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+              <iframe width="215" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+              <iframe width="215" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
-    </nav>
-    <div class="bsb1">
-      <!--slider-->
-      <div class="slideshow-container">
-        <!-- Slides -->
-        <div class="mySlides fade">
-            <img class="slideimg" src="/kepek/0001.jpg "alt="Kép 1">
-        </div>
 
-        <div class="mySlides fade">
-            <img class="slideimg" src="/kepek/0002.jpg" alt="Kép 2">
-        </div>
-
-        <div class="mySlides fade">
-            <img class="slideimg" src="/kepek/0003.jpg" alt="Kép 3">
-        </div>
-
-        <div class="mySlides fade">
-          <img class="slideimg" src="/kepek/0004.jpg" alt="">
-        </div>
-
-        <div class="mySlides fade">
-          <img class="slideimg" src="/kepek/0005.jpg" alt="Kép 3">
       </div>
-    </div>
-    <script>
-        // JavaScript for Automatic Slideshow
-        var slideIndex = 0;
-        showSlides();
 
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2000); // Change slide every 2 seconds, you can adjust it
-        }
-    </script>
-      <!--Conetnt-->
-
-      <div style="margin-top: 40px;" class="behuz" id="#emlekeink">
-        <h1>„A régi idők eseményei történetté váltak.</h1>
-        <p>      Nemcsak története van azonban az intézetnek, hanem élete is, mely emberi sorsokból és elrendelésekből színes mozaik-képpé tevődik össze.
-          A múltnak színes élményszerűen gazdag életét milyen halavány, fakó színben rekonstruálja az irattár avatag lapjairól előkerülő tényszerű adatok.
-          A história fátyolt vet az elzúgott évek apró eseményeire, a diákélet pompázó kedélyvilágára…. Az emlékezés a diák-romantika délibábos képében tükrözteti a régi gondokat és a régi örömöket. Az elcsendült kacagások, teli torkú prepanóták, az ifjú lélekben borongó szekundás szorongások, huncut kötődések, diák-álmok, diák-ábrándok, a szív első rezdülései vajjon hova tűntek, vajon hol maradtak
-          meg?</p>
-        <p>Pedáns rendben sorakoznak a statisztikus előtt a nevek, az adatok, de hol dobog a szív, melynek érzelmei, hangulatai, vágyai szépítették meg a diákéletet?
-          Óh ezek nem maradtak meg az intézet irattárában: ott élnek az emberekben, kiket idefűz az Emlék, vagy belehaltak, elporladtak a földbe, mely sírjával takar.
-          Mennyi sok név, mennyi sok adat, ami belefut egy száraz számjegybe s a lélek húrjain is csak egy számjegyet pendít meg.</p>
-        <p>Ha meg lehetne szólaltatni ezeket az adatokat?”</p>
-        <p>Takács Béla tanár úr e bevezető gondolatokkal kezdte az 1928/29-es esztendő értesítőjét, az iskola 58. tanévében, az intézet új épületében töltött 25 éves jubileum jegyében.</p>
-        <p>A régi idők eseményeit évszámokra, nevekre, adatok sokaságára fűzzük fel ma is, melyek mögött ott van a világ- és országtörténelem sorsfordító eseményeitől az egyéni életutak összekapcsolódásáig minden.
-          Volt egyszer egy tanítóképző…, mely 86 tanévet élt meg, 2 város adott otthont számára, és 3 épületben végezte áldásos nevelői munkáját. Ez idő alatt 13 igazgató szolgálta és irányította az intézmény mindennapi működést; 96 tanár, 20 gazdasági tanár, 18 gyakorlóiskolai tanító, 18 nevelő és 54 hitoktató nevelte és tanította a jövő tanítóit. Az oktató-nevelő munkát segítették az intézeti orvosok, iskolaszolgák, kertészek, gazdasszonyok. 86 esztendő alatt a tanítóképző intézet az oktatási reformoknak köszönhetően 12 fő képzési formaváltást hajtott végre. A 86 esztendő alatt 2154 tanítói oklevelet, valamint 24 gazdasági szaktanítói, 96 testnevelési szaktanítói oklevelet és 374 érettségi bizonyítványt adott át a sikeresen végzett növendékeknek.</p>
-        <p>86 esztendő alatt majd négy generáció nőtt fel, és a 86 esztendő alatt a világtörténelem kereke is nagyot fordult. Volt „boldog békeidő”, de árvíz és sok-sok járvány is, volt két világháború, őszirózsás forradalom, tanácsköztársaság, román megszállás, német megszállás után szovjet megszállás, majd népi demokrácia és 1956.</p>
-        <p>Évszámok és statisztikai adatok sokasága, mely mögött ott van egy nagy múltú iskola
-          mindennapi világa, a tanítói küldetésre való felkészítés, a gyakorlati életre és a helytállásra nevelés, a komoly oktató és nevelő munka melletti vidám és sokoldalú diákélet.</p>
-        <p>Takács Béla tanár úr is arra törekedett több mint 90 évvel ezelőtt, hogy megszólaltassa a számok és adatok sokaságát, mint ahogy mi is erre törekszünk 2021-ben, nem feledve a 150 évvel ezelőtt alapított tanítóképző jelentőségét mind a tanárok, mind a diákok, mind a városunk, Kiskunfélegyháza életében.</p>
-        
-        
-
-        <div id="osztalyok">
-          <h3>Osztályok:</h3>
-        </div>
-        <div id="tablok">
-          <h3>Tablók:</h3>
-
-        </div>
-        
+      <!--Footer-->
       
-        <div id="videok">
-          <h3>Videók:</h3>
-          <table>
-            <tr>
-              <td>
-                  <div class="video-container">
-                      <iframe width="300" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-                  </div>
-              </td>
-              <td>
-                  <div class="video-container">
-                      <iframe width="300" height="200" src="https://www.youtube.com/embed/masodikVideóID" frameborder="0" allowfullscreen></iframe>
-                  </div>
-              </td>
-              <td>
-                  <div class="video-container">
-                      <iframe width="300" height="200" src="https://www.youtube.com/embed/harmadikVideóID" frameborder="0" allowfullscreen></iframe>
-                  </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                  <div class="video-container">
-                      <iframe width="300" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-                  </div>
-              </td>
-              <td>
-                  <div class="video-container">
-                      <iframe width="300" height="200" src="https://www.youtube.com/embed/masodikVideóID" frameborder="0" allowfullscreen></iframe>
-                  </div>
-              </td>
-              <td>
-                  <div class="video-container">
-                      <iframe width="300" height="200" src="https://www.youtube.com/embed/harmadikVideóID" frameborder="0" allowfullscreen></iframe>
-                  </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                  <div class="video-container">
-                      <iframe width="300" height="200" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-                  </div>
-              </td>
-              <td>
-                  <div class="video-container">
-                      <iframe width="300" height="200" src="https://www.youtube.com/embed/masodikVideóID" frameborder="0" allowfullscreen></iframe>
-                  </div>
-              </td>
-              <td>
-                  <div class="video-container">
-                      <iframe width="300" height="200" src="https://www.youtube.com/embed/harmadikVideóID" frameborder="0" allowfullscreen></iframe>
-                  </div>
-              </td>
-            </tr>
-        </table>
-      </div>
-    </div>
+      <!-- Távolítsd el a tárolót, ha teljes szélességűre szeretné kiterjeszteni a láblécet.-->
+      <footer class="text-center" style="background-color: #fcf5a8; color: #311d1f; ">
+        <!-- Grid container -->
+        <div class="container-fluid">
+          <!-- Section: Links -->
+          <section>
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center"> 
+              <!-- Grid column -->
+              <div class="col-md-1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="/Index.html" >Főoldal</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
 
-    <!--Footer-->
-    
-    <!-- Távolítsd el a tárolót, ha teljes szélességűre szeretné kiterjeszteni a láblécet.-->
-    <footer class="text-center" style="background-color: #fcf5a8; color: #311d1f; ">
-      <!-- Grid container -->
-      <div class="container-fluid">
-        <!-- Section: Links -->
-        <section>
-          <!-- Grid row-->
-          <div class="row text-center d-flex justify-content-center"> 
-            <!-- Grid column -->
-            <div class="col-md-1">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="/Index.html" >Főoldal</a>
-              </h6>
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="/Tankep/tanKep.html">Tanítóképző</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="/Testgim/Testgim.html">Testnevelési Gimnázium</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="/Petgim/Petgim.html">Petőfi Gimnázium</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="/Gépsza/Gepsza.html">Gépészei szakközépiskola</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="/Szbi/Szbi.html">Szent Benedek Technikum</a>
+                </h6>
+              </div>
+              <div class="col-md-1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="">Adatkezelési tájékoztató</a>
+                </h6>
+              </div>
             </div>
-            <!-- Grid column -->
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
 
-            <!-- Grid column -->
-            <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="/Tankep/tanKep.html">Tanítóképző</a>
-              </h6>
+          <hr />
+
+          <!-- Section: Text -->
+          <section>
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-8">
+                <p>
+                  <h6>Kedves Látogató! <br></h6>
+                  Ha nem rendelkezik még jubileumi emlékkönyvvel, azt hétköznap, oktatási időben 4.500 Ft-ért beszerezheti az iskola titkárságán, vagy az iskola könyvtárában!
+
+                </p>
+              </div>
             </div>
-            <!-- Grid column -->
+          </section>
+          <!-- Section: Text -->
 
-            <!-- Grid column -->
-            <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="/Testgim/Testgim.html">Testnevelési Gimnázium</a>
-              </h6>
-            </div>
-            <!-- Grid column -->
+          <!-- Section: Social -->
+  <!--        <section>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a>-->
+          </section>
+          <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
 
-            <!-- Grid column -->
-            <div class="col-md-1">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="/Petgim/Petgim.html">Petőfi Gimnázium</a>
-              </h6>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="/Gépsza/Gepsza.html">Gépészei szakközépiskola</a>
-              </h6>
-            </div>
-            <!-- Grid column -->
-            <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="/Szbi/Szbi.html">Szent Benedek Technikum</a>
-              </h6>
-            </div>
-            <div class="col-md-1">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="">Adatkezelési tájékoztató</a>
-              </h6>
-            </div>
-          </div>
-          <!-- Grid row-->
-        </section>
-        <!-- Section: Links -->
-
-        <hr />
-
-        <!-- Section: Text -->
-        <section>
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-8">
-              <p>
-                <h6>Kedves Látogató! <br></h6>
-                Ha nem rendelkezik még jubileumi emlékkönyvvel, azt hétköznap, oktatási időben 4.500 Ft-ért beszerezheti az iskola titkárságán, vagy az iskola könyvtárában!
-
-              </p>
-            </div>
-          </div>
-        </section>
-        <!-- Section: Text -->
-
-        <!-- Section: Social -->
-<!--        <section>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-github"></i>
-          </a>-->
-        </section>
-        <!-- Section: Social -->
-      </div>
-      <!-- Grid container -->
-
-      <!-- Copyright -->
-      <div
-          class="text-center p-2"
-          style="background-color: rgba(0, 0, 0, 0.1)"
-          >
-        
-        <ahref="">© 2023 Copyright</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-</body>
-</html>
+        <!-- Copyright -->
+        <div
+            class="text-center p-2"
+            style="background-color: rgba(0, 0, 0, 0.1)"
+            >
+          
+          <ahref="">© 2023 Copyright</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+  </body>
+  </html>

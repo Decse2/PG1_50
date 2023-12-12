@@ -13,13 +13,19 @@
     
 }
 #videok{
-  
+  margin-bottom: 30px;
 }
-/* Táblázat stílusok */
-table {
-    width: 1140px;
-    border-collapse: collapse;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Vagy bármilyen más igazítási mód, amely megfelel az igényeidnek */
+  align-items: stretch; /* Vagy bármilyen más igazítási mód, amely megfelel az igényeidnek */
+  width: 1140px;
 }
+
+.flex-container iframe {
+  flex-basis: calc(33.33% - 20px); /* Adj meg megfelelő margin-t vagy padding-et az elemek között */
+  margin-bottom: 20px;}
 
 
   
