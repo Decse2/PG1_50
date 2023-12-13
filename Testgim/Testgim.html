@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/pg150.css">    
     <link rel="stylesheet" href="/bootstrap.css">
-    <link rel="stylesheet" href="tanKep.css"> 
+    <link rel="stylesheet" href="Testgim.css"> 
     <script src="/bootstrap.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href="/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- Főmenü -->
-    <nav style="color:#311d1f;  background-color:#fcf5a8; width: 101%;" class="navbar navbar-expand-lg navbar-light">
+    <nav style="color:#1f3864;  background-color:#bbd5ed; width: 101%;" class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="/Index.html"><img src="/PG150 projekt/logo150.png" alt="PG150 Logó" title="Vissza a főmenübe" height="75.5px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,10 +36,10 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Testgim/Testgim.html" role="button" aria-expanded="false" style=" font-weight: 700; font-size: 16px;">Testnevelési Gimnázium</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/Testgim/Testgim.html#Emlekeink">Emlékeink</a></li>
-                  <li><a class="dropdown-item" href="/Testgim/Testgim.html#Osztalyok">Osztályok</a></li>
-                  <li><a class="dropdown-item" href="/Testgim/Testgim.html#Tablok">Tablók</a></li>
-                  <li><a class="dropdown-item" href="/Testgim/Testgim.html#Videok">Videók</a></li>
+                  <li><a class="dropdown-item" href="Testgim.html#Emlekeink">Emlékeink</a></li>
+                  <li><a class="dropdown-item" href="Testgim.html#Osztalyok">Osztályok</a></li>
+                  <li><a class="dropdown-item" href="Testgim.html#Tablok">Tablók</a></li>
+                  <li><a class="dropdown-item" href="Testgim.html#Videok">Videók</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -126,7 +126,7 @@
       <!--Conetnt-->
 
       <h1 style="text-align: center;">„A régi idők eseményei történetté váltak.</h1>
-      <div style="margin-top: 40px;" class="behuz" id="#emlekeink">
+      <div style="margin-top: 40px;" class="behuz" id="Emlekeink">
         
         <p>      Nemcsak története van azonban az intézetnek, hanem élete is, mely emberi sorsokból és elrendelésekből színes mozaik-képpé tevődik össze.
           A múltnak színes élményszerűen gazdag életét milyen halavány, fakó színben rekonstruálja az irattár avatag lapjairól előkerülő tényszerű adatok.
@@ -147,7 +147,7 @@
         
 
         <div id="osztalyok">
-          <h3>Osztályok:</h3>
+          <h3>Osztályok</h3>
           <p>-</p>
           <p>-</p>
           <p>-</p>
@@ -157,43 +157,25 @@
         </div>
         <div id="tablok">
           <h3>Tablók:</h3>
-          <div id="fotorama" class="fotorama">
-            <img src="/kepek/0001.jpg" alt="Kép 1">
-            <img src="/kepek/0002.jpg" alt="Kép 2">
-            <img src="/kepek/0003.jpg" alt="Kép 3">
-            <img src="/kepek/0004.jpg" alt="Kép 4">
-            <img src="/kepek/0005.jpg" alt="Kép 5">
-          </div>
         </div>
-        <script>
-          $(document).ready(function () {
-            $('#fotorama').fotorama({
-              width: '100%', // Változtathatod a szélességet
-              maxwidth: '100%', // A képek maximális szélessége
-              ratio: 16 / 9, // A képarány (itt 16:9)
-              allowfullscreen: true, // Teljes képernyős nézet engedélyezése
-              nav: 'thumbs', // Kisképek mutatása a navigációhoz
-              loop: true // Végtelenített görgetés
-            });
-          });
-        </script>
         
       
         <div id="videok">
           <h3>Videók:</h3>
         </div class="flex-container">
-            <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-            <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-            <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-            <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-            <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-            <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-            <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-            <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-            <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-            <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-            <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
-            <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+          <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+          <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+          <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+          <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+          <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+          <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+          <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+          <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+          <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+          <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+          <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+          <iframe width="215" height="199" src="https://www.youtube.com/embed/videóID" frameborder="0" allowfullscreen></iframe>
+        </div>
         </div>
       </div>
 
@@ -202,7 +184,7 @@
     <!--Footer-->
     
     <!-- Távolítsd el a tárolót, ha teljes szélességűre szeretné kiterjeszteni a láblécet.-->
-    <footer class="text-center" style="background-color: #fcf5a8; color: #311d1f; ">
+    <footer class="text-center" style="background-color: #bbd5ed; color: #1f3864; ">
       <!-- Grid container -->
       <div class="container-fluid">
         <!-- Section: Links -->
@@ -255,7 +237,7 @@
             </div>
             <div class="col-md-1">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="">Adatkezelési tájékoztató</a>
+                <a href="https://szbi-pg.hu/index.php/hu/adatkezelesi-tajekoztato">Adatkezelési tájékoztató</a>
               </h6>
             </div>
           </div>
@@ -305,13 +287,13 @@
       <!-- Grid container -->
 
       <!-- Copyright -->
-      <div
-          class="text-center p-2"
-          style="background-color: rgba(0, 0, 0, 0.1)"
-          >
-        
-        <ahref="">© 2023 Copyright</a>
-      </div>
+      <div class="p-2"
+      style="background-color: rgba(0, 0, 0, 0.1); display: inline-flex;width: 100%; justify-content: space-evenly; "
+      >
+      <div>Tel.: +36 76 462 332</div>
+    <div><ahref="">© 2023 Copyright</a></div>
+      <div>E-mail.: itkarsag@szbi-pg.hu</div>
+  </div>
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
