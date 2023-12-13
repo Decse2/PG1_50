@@ -3463,10 +3463,10 @@ textarea.form-control-lg {
   padding: 0.5rem 0;
   margin: 0;
   font-size: 1rem;
-  color: #fcf5a8;
+  color: #fff;
   text-align: left;
   list-style: none;
-  background-color: #311d1f;
+  background-color: rgb(51,135,187);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -3676,23 +3676,23 @@ textarea.form-control-lg {
 }
 
 .dropdown-item:visited, .dropdown-item:link {
-  color: #fcf5a8;
-  background-color: #311d1f;
+  color: #fff;
+  background-color: rgb(51,135,187));
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
-  color: #fcf5a8;
-  background-color: #311d1f;
+  color: #fff;
+  background-color: rgb(51,135,187));
 }
 .dropdown-item.active, .dropdown-item:active {
-  color: #fcf5a8;
+  color: #fff;
   text-decoration: none;
-  background-color: #311d1f;
+  background-color: rgb(51,135,187));
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
-  color: #fcf5a8;
+  color: #fff;
   pointer-events: none;
-  background-color: #311d1f;
+  background-color: rgb(51,135,187));
 }
 
 .dropdown-menu.show {
