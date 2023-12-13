@@ -25,7 +25,7 @@ a:visited, a{
 
 /* Add fade animation */
 .fade {
-  animation: fade 2s ease-in-out infinite; }
+  animation: fade 4s ease-in-out infinite; }
 
 @keyframes fade {
   0%, 100% {
