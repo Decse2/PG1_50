@@ -18,8 +18,8 @@
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Vagy bármilyen más igazítási mód, amely megfelel az igényeidnek */
-  align-items: stretch; /* Vagy bármilyen más igazítási mód, amely megfelel az igényeidnek */
+  justify-content:space-between; /* Vagy bármilyen más igazítási mód, amely megfelel az igényeidnek */
+  align-items:center; /* Vagy bármilyen más igazítási mód, amely megfelel az igényeidnek */
   width: 1140px;
 }
 
